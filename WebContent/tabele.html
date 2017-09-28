@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tabele</title>
+
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body>
+
+<h1>Prezentacja tabel</h1>
+
+<h2 style="color: red">Prosta tabela</h2>
+
+
+<table>
+<tr><td>Glassfish</td><td>Oracle</td><td>Pełny serwer Java EE</td><td>Open source</td></tr>
+<tr><td>WebLogic</td><td>Oracle</td><td>Pełny serwer Java EE</td><td>Komercyjny</td></tr>
+<tr><td>WebSphere</td><td>IBM</td><td>Pełny serwer Java EE</td><td>Komercyjny</td></tr>
+<tr><td>JBoss</td><td>RedHat</td><td>Pełny serwer Java EE</td><td>Komercyjny</td></tr>
+<tr><td>WildFly</td><td>RedHat</td><td>Pełny serwer Java EE</td><td>Open source (darmowa wersja JBoss)</td></tr>
+<tr><td>Tomcat</td><td>Apache</td><td>Kontener serwletów</td><td>Open source</td></tr>
+</table>
+
+<h2>Tabela rozbudowana</h2>
+
+<table>
+<thead>
+<tr><th>Serwer</th><th>Producent</th><th>Rodzaj</th><th>Licencja</th></tr>
+</thead>
+
+<tbody>
+<tr><td>Tomcat</td><td>Apache</td><td>Kontener serwletów</td><td rowspan="2">Open source</td></tr>
+<tr><td>Glassfish</td><td>Oracle</td><td>Pełny serwer Java EE</td></tr>
+<tr><td>WebSphere</td><td>IBM</td><td>Pełny serwer Java EE</td><td>Komercyjny</td></tr>
+<tr><td>JBoss</td><td>RedHat</td><td colspan="2">Pełny serwer Java EE, komercyjny lub nie</td></tr>
+</tbody>
+
+<tfoot>
+<tr><td>4</td></tr>
+</tfoot>
+</table>
+
+
+</body>
+</html>
+

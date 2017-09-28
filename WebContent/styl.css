@@ -1,0 +1,33 @@
+body{
+	background-color: activecaption;
+	font-family: 'Verdana', 'Times New Roman', sans-serif;
+	font-size: 11pt;
+}
+
+p {
+	text-indent: 2em;
+}
+
+strong {
+	color: red;
+}
+
+.streszczenie {
+	/* odnosze sie do klasy streszczenie*/
+	/* font-size: smaller; */
+	
+	font-size: 0.75em; /* 75% normalnego rozmiaru czcionki */
+	color: navy;
+	
+	margin: 20px 30px;
+	padding: 1em;
+	background-color: #CCFFCC;
+	border-style: solid;
+	border-color: fuchsia;
+	border-width: 2px;
+	
+}
+
+.tresc {
+	font-family: 'Times New Roman';
+	}

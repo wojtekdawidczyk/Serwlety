@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Układ strony</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Author" content="Patryk Czarnik">
+  
+  <style type="text/css">
+body {
+  background-color: grey;
+  margin:0;
+  z-index: 10;
+}
+
+#naglowek {
+  background-color: #CCCCCC;
+  position: fixed;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+#naglowek h1 {
+  margin: 4px auto;
+  text-align: center;
+  font-size: 25px;
+  height: 32px;
+}
+
+#panel-lewy {
+  padding: 0.5em;
+  text-align: left;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 12em;
+  z-index: 60;
+}
+
+#panel-glowny {
+  background-color: white;
+  padding: 0.5em;
+  text-align: justify;
+  position: absolute;
+  top: 60px;
+  left: 13em;
+  right: 9em;
+  bottom: auto;
+  z-index: 50;
+}
+
+#panel-lewy ul {
+  border: solid 1px black;
+  background-color: #FFFFBB;
+}
+
+ul.menu {
+  list-style: none;
+  margin: 2px auto 2px 13em;
+  padding: 0;
+  z-index: 150;
+  height: 22px;
+}
+
+ul.menu > li { /* kolumna menu */
+  float: left;
+  margin: 5px 0;
+  border: solid 1px black;
+  padding: 0;
+  width: 120px;
+  z-index: 160;
+}
+
+ul.menu > li > h6 { /* stala czesc kolumny menu (naglowek kolumny menu) */
+  background-color: #CCDDFF;
+  border: none;
+  font-size:medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ul.menu > li > ul { /* rozwijana czesc kolumny menu */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+ul.menu > li:hover > ul {
+  display: block;
+}
+
+ul.menu > li > ul > li { /* element menu (blok, nie sam link) */
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+}
+
+ul.menu > li > h6, ul.menu > li > ul > li { /* prostokacik, taki albo owaki */
+  background: #DDEEFF url(gradient1.png) repeat-x;
+  margin: 0;
+  padding: 1px 3px;
+  text-align: center;
+  height: 20px;
+  width: 114px;
+  z-index: 180;
+}
+
+ul.menu > li > ul > li:hover, ul.menu > li:hover > h6 {
+  background: #DDFFEE url(gradient2.png) repeat-x;
+}
+
+
+ul.menu a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-family: 'Arial', 'Free Sans', sans-serif;
+}
+
+  </style>
+</head>
+<body>
+
+<div id="naglowek">
+<h1>Strona przykładowa</h1>
+<ul class="menu">
+<li><h6>Jeden</h6>
+  <ul>
+  <li><a href="#poczatek">Początek</a></li>
+  <li><a href="#srodek">Środek</a></li>
+  <li><a href="#koniec">Koniec</a></li>
+  </ul>
+</li>
+<li><h6>Dwa</h6>
+  <ul>
+  <li><a href="#poczatek">Początek</a></li>
+  <li><a href="#koniec">Koniec</a></li>
+  </ul>
+</li>
+<li><h6><a href="#poczatek">Trzy</a></h6>
+  <ul>
+  <li><a href="#poczatek">Początek</a></li>
+  <li><a href="#srodek">Środek</a></li>
+  <li><a href="#koniec">Koniec</a></li>
+  </ul>
+</li>
+</ul>
+</div>
+
+<div id="panel-lewy">
+<ul>
+<li>Litwo! Ojczyzno moja! Ty jesteś jak zdrowie.</li>
+<li>Gotem. Dość, że nauczyciel.</li>
+<li>Gdzie.</li>
+<li>Pragnąłby u wieczerzy? Są tu.</li>
+<li>Umilkli wszyscy.</li>
+<li>Lubił bardzo szybko, suwała.</li>
+</ul>
+
+<ul>
+<li>Stary.</li>
+<li>I bór czernił.</li>
+<li>Francuz wymyśli.</li>
+<li>Pan.</li>
+<li>Lubił.</li>
+<li>Ołtarzyk złoty.</li>
+</ul>
+</div>
+
+<div id="panel-glowny">
+<h2 id="poczatek">Początek</h2>
+<p>Lorem ipsum dolor sit amet ultricies odio, in sapien. Praesent ante. Curabitur elit. Mauris arcu. Donec ullamcorper, augue purus, consectetuer at, fermentum ante ipsum quis placerat quam. Ut tempus enim arcu id justo arcu, rutrum ut, pulvinar vitae, lorem. Nam suscipit, erat volutpat. Donec porttitor interdum. Quisque placerat aliquet. Vestibulum egestas sit amet dolor. Suspendisse dolor urna eu ante. Nullam dui ut erat. Duis neque quis augue. Sed ornare nulla eu mauris sit amet, consectetuer ut, eleifend et, commodo est ut leo et ultrices sapien vitae convallis posuere. Quisque vestibulum. Aenean pede turpis sagittis eleifend. Vestibulum aliquam ut, sapien. Cras mattis, magna in faucibus justo nibh, dictum eu, odio. Aenean augue eu turpis metus sed wisi eu mauris. Nullam aliquet congue fringilla est, vel quam. Aliquam erat volutpat. Ut wisi id sapien libero, posuere sit amet, rutrum posuere dui. In hac habitasse platea dictumst. Quisque nulla. Mauris nec tellus. Quisque vehicula vitae, tortor. Phasellus lacinia id, ullamcorper fringilla, justo augue a odio nec tellus nec.</p>
+
+<p>Morbi pede. Morbi risus nunc, rhoncus tortor. Proin rhoncus gravida. Donec suscipit id, adipiscing dui quis orci orci, placerat ut, gravida ullamcorper quam. Nam aliquet ultrices metus feugiat nec, bibendum ac, vehicula eget, suscipit rutrum. Pellentesque suscipit lectus. Phasellus in augue. Vivamus elit arcu, pellentesque purus, pharetra pede. Fusce quam accumsan lorem. Cras sit amet, consectetuer vestibulum vel, massa. Nulla ut lacus rhoncus gravida. Duis mauris mauris, volutpat aliquam ut, eros. Nullam suscipit elementum nulla. Nunc volutpat tempus arcu. Donec dolor sit amet, consectetuer viverra arcu, imperdiet sed, aliquet ipsum dolor massa ut enim. Phasellus lacinia dapibus, accumsan eget, lacinia porta. Sed malesuada fames ac imperdiet id, orci. In hac habitasse platea dictumst. Aenean vel hendrerit ac, eros. Etiam tempor tristique, urna ut felis. In nunc iaculis et, imperdiet orci lorem a metus. Nulla facilisi. Class aptent taciti.</p>
+
+<h2 id="srodek">Środek</h2>
+<p>Maecenas sapien vitae massa imperdiet neque. Praesent at diam placerat scelerisque, dui non erat libero, id turpis at erat. Integer non dui. Vivamus hendrerit tellus vulputate adipiscing. Nam feugiat, pulvinar porta turpis egestas. Mauris urna. Pellentesque orci luctus scelerisque. Duis a enim urna, egestas velit. Donec orci. Morbi sodales nibh risus, commodo convallis pellentesque, wisi. Mauris tempor tincidunt quis, odio. Donec non risus. Suspendisse eu neque tristique libero nec nunc libero, ultricies odio, a enim ac nunc ut lacus nulla ac ante sit amet turpis id felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam varius, felis facilisis libero. Nulla quis enim. Aliquam malesuada eros, ut lacus tellus ac hendrerit wisi. Praesent in turpis.</p>
+
+<p>Nullam sapien. Praesent ante. Morbi massa placerat nec, congue risus sit amet ligula. Sed placerat tempor magna. In neque tellus, eleifend lectus non eros. Nullam accumsan. Nullam id felis. Aliquam adipiscing elit. Curabitur adipiscing aliquet lorem. Cras vitae facilisis libero. Aenean aliquet, purus laoreet luctus, nisl sapien eget elit dapibus et, ultricies nec, nisl. Nullam fermentum erat. Suspendisse ut tellus non eros. Fusce purus laoreet sapien. Quisque consectetuer eget, rutrum vel, lacinia dictum. Fusce facilisis enim. Fusce vel risus. Vivamus ut magna. Nulla convallis consequat. Integer tincidunt varius felis auctor vitae, imperdiet quis, accumsan et, congue arcu luctus arcu nunc ac lacus. Sed adipiscing. Nam id quam. Pellentesque dolor dictum at, consequat pharetra. Donec nulla ornare a, diam. Aenean sit amet dolor. Donec mauris nibh ac erat. Praesent tristique senectus et ultrices fringilla. In hac habitasse platea dictumst. Suspendisse congue ut, lectus. Praesent.</p>
+
+<p>Etiam sapien sed elit nibh, fringilla eget, eros. Integer tristique senectus et commodo ac, felis. Cum sociis natoque penatibus et ultrices posuere in, libero. Aliquam malesuada arcu nibh malesuada sit amet tellus. Vestibulum vestibulum, dolor rhoncus purus, dictum suscipit sit amet, massa. Suspendisse eleifend in, suscipit suscipit wisi. Phasellus ut congue eu, iaculis at, mauris. Pellentesque ut diam lectus, tincidunt mattis adipiscing. Nam diam vel nulla. Mauris et quam. Aliquam adipiscing elit. Ut molestie aliquam. In hac habitasse platea dictumst. Maecenas facilisis, ante pretium felis adipiscing dui vitae fermentum ut, sagittis a, hendrerit wisi. Morbi eget elit. Nunc non enim id eros. Mauris at quam. Praesent sollicitudin, odio orci, sodales eros. Sed porttitor. Aenean mollis tincidunt, risus tortor, fermentum imperdiet wisi. Suspendisse ultricies nec, imperdiet tempor, sapien varius quis, lacinia ut, diam. Pellentesque mollis nibh vel neque placerat nisl.</p>
+
+<h2 id="koniec">Koniec</h2>
+<p>Duis at purus. Phasellus adipiscing. Cum sociis natoque penatibus et gravida non, quam. Aliquam adipiscing wisi eu dui vitae ipsum dolor sed justo. Fusce eu lectus. Ut pharetra lorem nonummy nisl pellentesque facilisis. Fusce enim. Phasellus fermentum odio. Class aptent taciti sociosqu ad litora torquent per inceptos hymenaeos. Curabitur nec quam. Quisque eu mollis luctus. Sed lobortis urna. Donec non dui. Cras vitae sagittis lorem. In eros orci ac ipsum. Fusce consequat sapien facilisis congue. Donec iaculis. Pellentesque habitant morbi tristique purus. Phasellus vulputate tortor ante et lacus sed interdum elementum. Nunc molestie venenatis nisl. Etiam vel wisi. Aenean urna dapibus sit amet, consectetuer.</p>
+</div>
+</body>
+</html>

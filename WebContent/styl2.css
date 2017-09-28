@@ -1,0 +1,61 @@
+body {
+    background-color: #FFFFCC;
+    font-family: 'Verdana', 'Arial', sans-serif;
+    font-size: 24pt;
+}
+
+
+p {
+    /* text-indent: 2em; */
+}
+
+strong {
+    color: red;
+}
+
+.streszczenie {
+    /* odnosze sie do klasy streszczenie */
+    
+    font-size: 0.75em;  /* 75% normalnego rozmiaru czcionki */
+    margin: 20px 100px;
+    padding: 1em;
+    background-color: #CCFFFF;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    
+}
+
+.tresc {
+    font-family: 'Times New Roman', serif;
+    margin-top: 2em;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+
+table {
+    background-color: #DDEEFF;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    
+    border-collapse: collapse;
+    
+}
+
+td, th {
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    
+    padding: 0.25em;
+}
+
+th {
+    background-color: #FFDDEE;
+}
+td:hover {
+	background-color: red;
+}
